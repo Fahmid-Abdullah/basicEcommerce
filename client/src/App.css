@@ -1,0 +1,274 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  z-index: 1; /* Ensure the sidebar is above the main content */
+}
+
+.sidebar a {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+/* Remove underline and add other decorations to a specific class */
+.no-underline {
+  text-decoration: none;
+  color: red; /* Set the text color to red */
+  font-style: italic; /* Italicize the text */
+}
+
+.sidebar h2 {
+  padding-top: 14rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  width: 90%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.home {
+  flex: 1;
+  margin-left: 20%;
+}
+
+input {
+  padding: 10px;
+  margin-left: 30%;
+  width: 35%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.home h1 {
+  margin-left: 40%;
+}
+
+.items {
+  list-style: none;
+  padding: 0;
+  margin-left: 10%;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  width: 650px;
+  margin-bottom: 30px;
+}
+
+.image-container {
+  width: 150px; /* Set the width of the container */
+  height: 150px; /* Set the height of the container */
+  overflow: hidden;
+  padding: 15px;
+  padding-right: 25px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  object-fit: cover;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.product-info h2 {
+  margin: 0 0 -10px 0;
+}
+
+.price,
+.description,
+.stock {
+  font-size: 1rem;
+  margin: 0 0 -20px 0;
+}
+
+button {
+  margin-top: 10px;
+  width: 200px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #3498db; /* Change the background color as needed */
+  transition: background-color 0.1s ease;
+}
+button:hover {
+  background-color: #1f5d86;
+}
+
+.auth {
+  flex: 1;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.auth label {
+  font-weight: bold;
+}
+
+.auth input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5%;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.auth-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around; /* Updated property */
+  margin: 3rem auto;
+}
+
+.form-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form-group {
+  text-align: right;
+  margin-left: -20%;
+}
+
+.profile {
+  flex: 1;
+  margin-bottom: 20px;
+  margin-left: 55%;
+  width: 100%;
+}
+
+.profile-info {
+  flex: 1;
+  margin-bottom: 20px;
+  margin-left: -5%;
+  width: 100%;
+}
+
+.profile-button {
+  margin-left: -5%;
+}
+
+.cart {
+  flex: 1;
+  margin-left: 25%;
+}
+
+.cart h1 {
+  margin-bottom: 20px;
+  margin-left: 40%;
+  width: 100%;
+}
+
+.cart h3 {
+  margin-left: 10%;
+  width: 100%;
+  font-size: 100px;
+  color: #929292;
+}
+
+.purchase-all {
+  margin-left: 32%;
+
+}
+
+.add-item {
+  max-width: 600px;
+  flex: 1;
+  margin-left: 25%;
+}
+
+.add-item h1 {
+  margin-bottom: 20px;
+  margin-left: 40%;
+  width: 100%;
+}
+
+.add-item form {
+  flex-direction: column;
+  margin-left: 20%;
+  width: 100%;
+}
+
+.add-item label {
+  font-weight: bold;
+}
+
+.add-item input {
+  width: 70%;
+  margin-bottom: 5px;
+}
+
+.add-item textarea {
+  margin-left: 30%;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-item button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+.add-item button:hover {
+  background-color: #1f5d86;
+}
+
+.product-element {
+  margin-bottom: 10px;
+}
