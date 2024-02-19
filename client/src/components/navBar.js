@@ -25,7 +25,7 @@ export const NavBar = ({ updateBalance }) => {
         if (cookies.access_token) {
             fetchBalance();
         }
-    }, [cookies.access_token, fetchBalance, updateBalance]); // Include fetchBalance and updateBalance in the dependency array
+    }, [cookies.access_token, updateBalance]); // Include fetchBalance and updateBalance in the dependency array
 
     return (
         <div className="sidebar">
